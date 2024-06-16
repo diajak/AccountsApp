@@ -1,0 +1,22 @@
+
+server:
+  port: 8081
+
+spring:
+    datasource:
+        url: jdbc:h2:mem:accounts
+        username: root
+        password: root
+        driverClassName: org.h2.Driver
+    h2:
+      console:
+        enabled: true
+    jpa:
+      database-platform: org.hibernate.dialect.H2Dialect
+      hibernate:
+            ddl-auto: update
+      show-sql: true
+    application:
+      name: accounts
+    devtools:
+      add-properties: false
